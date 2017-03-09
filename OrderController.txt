@@ -1,0 +1,26 @@
+Step 1: Create a servlet OrderController
+Step 2: implement doPost()
+Step 3: Get the form values
+	String productName = request.getParameter("product_name");
+	String productQuantity = request.getParameter("product_quantity");
+	HttpSession session = request.getSession();
+	User user = (User) session.getAttribute("LOGGED_IN_USER");
+	Long userId = user.getId();
+Step 4: Print the form values
+	System.out.println(productName +" "+ productQuantity);
+Step 5: Create an object for OrderDAO
+	OrderDAO orderDAO = new OrderDAO();
+	orderDAO.save(userId, productName, productQuantity);
+Step 6: Check if order is placed
+	6.1 : If success go to payment page
+	6.2 : If failure redirect to same page
+
+//Cancel Order
+update orders set status = 'CANCELED', modified_date = now()
+where order_id = 1;
+
+//Delivered Order
+update orders set status = 'DELIVERED', delivery_time = now()
+where order_id = 1;
+
+
