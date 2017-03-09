@@ -29,7 +29,7 @@ public class RegisterController extends HttpServlet {
 		
 		//Convert String to Long
 		Long mobileNo = Long.valueOf(mobileNoStr);
-		
+		 
 		//Store form fields in a Model Object
 		User user = new User();
 		user.setName(name);

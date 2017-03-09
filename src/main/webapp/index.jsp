@@ -4,7 +4,7 @@
 
 	<%
 		String msg = request.getParameter("msg");
-		if (msg != null)
+		if (msg != null) 
 			out.println("Message = " + msg);
 	%>
 	<a href="Register.jsp">Register</a>

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>Book Publishing (PubHub 100)</h3>
-
+ 
 
 	<h3>New User Registration</h3>
 	<form action="RegisterController" method="post">

@@ -5,7 +5,7 @@ Step 3: Get the form values
 	String productQuantity = request.getParameter("product_quantity");
 	HttpSession session = request.getSession();
 	User user = (User) session.getAttribute("LOGGED_IN_USER");
-	Long userId = user.getId();
+	Long userId = user.getId(); 
 Step 4: Print the form values
 	System.out.println(productName +" "+ productQuantity);
 Step 5: Create an object for OrderDAO
